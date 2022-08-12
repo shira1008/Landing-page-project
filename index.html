@@ -1,0 +1,719 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>VRapp</title>
+    <!-- bootstrap and css -->
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="./css/style.css" />
+    <!-- icons -->
+    <script defer src="js/fontawesome-all.min.js"></script>
+  </head>
+  <body data-spy="scroll" data-target="#navScrollspy">
+    <!-- =========navbar======= -->
+    <nav class="navbar my-nav navbar-dark navbar-expand-lg fixed-top">
+      <div class="container">
+        <a href="index.html" class="navbar-brand">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="16"
+            height="16"
+            fill="currentColor"
+            class="bi bi-headset-vr"
+            viewBox="0 0 16 16"
+            aria-hidden="true"
+          >
+            <path
+              d="M8 1.248c1.857 0 3.526.641 4.65 1.794a4.978 4.978 0 0 1 2.518 1.09C13.907 1.482 11.295 0 8 0 4.75 0 2.12 1.48.844 4.122a4.979 4.979 0 0 1 2.289-1.047C4.236 1.872 5.974 1.248 8 1.248z"
+            />
+            <path
+              d="M12 12a3.988 3.988 0 0 1-2.786-1.13l-.002-.002a1.612 1.612 0 0 0-.276-.167A2.164 2.164 0 0 0 8 10.5c-.414 0-.729.103-.935.201a1.612 1.612 0 0 0-.277.167l-.002.002A4 4 0 1 1 4 4h8a4 4 0 0 1 0 8z"
+            />
+          </svg>
+          VR App
+        </a>
+        <button
+          type="button"
+          class="navbar-toggler navbar-toggler-right"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+          aria-controls="navBarNAv"
+          aria-expanded="false"
+          aria-label="toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <!-- id match in the body -->
+          <ul class="navbar-nav" id="navScrollspy">
+            <li class="nav-item">
+              <a class="nav-link" href="#section-hero">To the top</a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link" href="#section-description">Description</a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link" href="#section-trailer">Trailer</a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link" href="#section-showcase">Showcase</a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link" href="#section-featured">Features</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#section-pricing">Pricing</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#section-reviews">Reviews</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <!-- ==============hero section========================== -->
+    <section
+      id="section-hero"
+      class="text-center text-white d-flex justify-content-center align-items-center py-5"
+    >
+      <div class="container">
+        <h1 class="display-1 text-grad text-uppercase mt-5">VR App</h1>
+        <p class="display-4">Lorem ipsum dolor</p>
+        <p class="lead">Lorem ipsum dolor, sit amet consectetur adipisicing.</p>
+        <p class="lead">Lorem ipsum dolor sit amet.</p>
+        <p><strong> Download now on:</strong></p>
+        <a
+          href="#0"
+          class="btn btn-lg btn-grad mb-3 mb-sm-0 ms-sm-3 text-capitalize"
+          ><i class="fab fa-app-store-ios" aria-hidden="true"></i> App Store</a
+        >
+        <a href="#0" class="btn btn-lg btn-grad mb-0 text-capitalize"
+          ><i class="fab fa-google-play" aria-hidden="true"> </i> Google Play</a
+        >
+      </div>
+    </section>
+    <!-- /*===== ========description center=========== */ -->
+    <div class="container-sm">
+      <section id="section-description" class="mt-5">
+        <h2 class="display-4 text-center text-capitalize text-grad py-2">
+          what is VR app?
+        </h2>
+        <p>
+          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Distinctio
+          officia quae reprehenderit placeat deserunt, voluptas nostrum quaerat?
+          Ab veniam officia libero tenetur reprehenderit dolore saepe ipsam
+          error temporibus quod, aliquid repudiandae perferendis. Distinctio,
+          perferendis ut ipsa ipsum incidunt quia eaque nemo aliquid laudantium
+          enim temporibus?
+        </p>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam
+          deserunt animi, quo inventore sit molestias?
+        </p>
+      </section>
+      <!-- ===========trailer section=========== -->
+      <section id="section-trailer" class="mt-5">
+        <h2 class="display-4 text-center text-grad text-capitalize">
+          VR app trailer
+        </h2>
+        <p class="text-center">
+          Lorem ipsum, dolor sit amet consectetur adipisicing.
+        </p>
+        <!-- **video -->
+        <div class="ratio ratio-16x9">
+          <iframe
+            class="ratio item"
+            src="https://www.youtube.com/embed/NpEaa2P7qZI"
+          ></iframe>
+        </div>
+        <!-- end video -->
+      </section>
+      <!-- ============showcase-section============ -->
+      <section id="section-showcase" class="mt-5">
+        <h2 class="display-4 text-center text-capitalize text-grad">our app</h2>
+        <p class="text-center">
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+        </p>
+        <!-- the carousel -->
+
+        <div id="carouselAll" class="carousel slide" data-bs-ride="carousel">
+          <div class="carousel-indicators">
+            <button
+              type="button"
+              data-bs-target="#carouselAll"
+              data-bs-slide-to="0"
+              aria-label="Slide 1"
+              class="active"
+            ></button>
+            <button
+              type="button"
+              data-bs-target="#carouselAll"
+              data-bs-slide-to="1"
+              aria-label="Slide 2"
+            ></button>
+            <button
+              type="button"
+              data-bs-target="#carouselAll"
+              data-bs-slide-to="2"
+              aria-label="Slide 3"
+            ></button>
+            <button
+              type="button"
+              data-bs-target="#carouselAll"
+              data-bs-slide-to="3"
+              aria-label="Slide 4"
+            ></button>
+          </div>
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <img
+                src="./myimgs/pexels-photo-123335.webp"
+                alt="First slide"
+                class="d-block w-100"
+              />
+              <div class="carousel-caption">
+                <h3>Caption</h3>
+                <p>Lorem ipsum dolor sit amet consectetur.</p>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <img
+                src="./myimgs/pexels-photo-3183143.jpeg"
+                alt="Second slide"
+                class="d-block w-100"
+              />
+              <div class="carousel-caption">
+                <h3>Caption</h3>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit.</p>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <img
+                src="./myimgs/metaverse-7203825_960_720.jpg"
+                alt="Third slide"
+                class="d-block w-100"
+              />
+              <div class="carousel-caption">
+                <h3>Caption</h3>
+                <p>Lorem, ipsum dolor.</p>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <img
+                src="./myimgs/augmented-reality-1853592_960_720.jpg"
+                alt="Fourth slide"
+                class="d-block w-100"
+              />
+              <div class="carousel-caption">
+                <h3>Caption</h3>
+                <p>Lorem ipsum dolor sit amet.</p>
+              </div>
+            </div>
+          </div>
+          <button
+            type="button"
+            class="carousel-control-prev"
+            data-bs-target="#carouselAll"
+            data-bs-slide="prev"
+          >
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button
+            type="button"
+            class="carousel-control-next"
+            data-bs-target="#carouselAll"
+            data-bs-slide="next"
+          >
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
+
+        <!-- end of carousel -->
+      </section>
+
+      <!-- ============features section================= -->
+      <section id="section-featured" class="mt-5">
+        <h2 class="display-4 text-center text-grad text-capitalize mb-5">
+          our features
+        </h2>
+        <div class="row">
+          <!-- single feature -->
+          <div
+            class="col-12 col-sm-6 col-lg-3 d-flex flex-column align-items-center mb-5"
+          >
+            <div class="h1">
+              <i class="fa fa-mobile mb-4  my-icon" aria-hidden="true">
+              </i>
+            </div>
+            <h3 class="h4 mb-4 text-center text-capitalize">feature heading</h3>
+            <p class="text-center">
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+              Consectetur, magnam.
+            </p>
+            <a href="#0" class="btn btn-sm btn-grad mt-auto text-capitalize"
+              >read more</a
+            >
+          </div>
+          <!-- end of single feature -->
+
+          <!-- single feature -->
+          <div
+            class="col-12 col-sm-6 col-lg-3 d-flex flex-column align-items-center mb-5"
+          >
+            <div class="h1">
+              <i class="fa fa-video mb-4 my-icon" aria-hidden="true">
+              </i>
+            </div>
+            <h3 class="h4 mb-4 text-center text-capitalize">feature heading</h3>
+            <p class="text-center">
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+              Consectetur, magnam.
+            </p>
+            <a href="#0" class="btn btn-sm btn-grad mt-auto text-capitalize"
+              >read more</a
+            >
+          </div>
+          <!-- end of single feature -->
+
+          <!-- single feature -->
+          <div
+            class="col-12 col-sm-6 col-lg-3 d-flex flex-column align-items-center mb-5"
+          >
+            <div class="h1">
+              <i class="fa fa-code mb-4  my-icon" aria-hidden="true">
+              </i>
+            </div>
+            <h3 class="h4 mb-4 text-center text-capitalize">feature heading</h3>
+            <p class="text-center">
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+              Consectetur, magnam.
+            </p>
+            <a href="#0" class="btn btn-sm btn-grad mt-auto text-capitalize"
+              >read more</a
+            >
+          </div>
+          <!-- end of single feature -->
+
+          <!-- single feature -->
+          <div
+            class="col-12 col-sm-6 col-lg-3 d-flex flex-column align-items-center mb-5"
+          >
+            <div class="h1">
+              <i
+                class="fa fa-glasses mb-4  my-icon"
+                aria-hidden="true"
+              >
+              </i>
+            </div>
+            <h3 class="h4 mb-4 text-center text-capitalize">feature heading</h3>
+            <p class="text-center">
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+              Consectetur, magnam.
+            </p>
+            <a href="#0" class="btn btn-sm btn-grad mt-auto text-capitalize"
+              >read more</a
+            >
+          </div>
+          <!-- end of single feature -->
+        </div>
+      </section>
+
+      <!-- ==========pricing-section=========== -->
+      <section id="section-pricing" class="mt-5">
+        <h2 class="display-4 text-center text-capitalize text-grad mb-5">
+          choose your plan
+        </h2>
+        <div class="row">
+          <!-- free -->
+          <div class="col-12 col-md-4 mb-4">
+            <div class="card my-card-outline ">
+              <div class="card-header my-card-bg text-white text-center">
+                <h2>Starter</h2>
+                <h4>Free</h4>
+              </div>
+              <div class="card-body">
+                <p class="card-text">Lorem ipsum dolor sit amet consectetur.</p>
+              
+              <ul>
+                <li class="list-group-items text-capitalize text-white">
+                  <i class="fas fa-fw fa-paint-brush" aria-hidden="true"></i>
+                    item discriptaion
+                  </i>
+                </li>
+
+                  <li class="list-group-items text-capitalize text-white">
+                  <i class="fab fa-fw fa-instagram" aria-hidden="true"></i>
+                    item discriptaion
+                  </i>
+                </li>
+              <br>
+              </ul>
+              </div>
+              <div class="card-footer text-center">
+                <a href="#o" class="btn btn-grad">Select plan</a>
+              </div>
+            </div>
+          </div>
+          <!-- end of free -->
+               <!-- PRO -->
+          <div class="col-12 col-md-4 mb-4">
+            <div class="card my-card-outline-pro">
+              <div class="card-header my-card-bg text-white text-center">
+                <h2>Pro</h2>
+                <h4>$9.99 / month</h4>
+              </div>
+              <div class="card-body">
+                <p class="card-text">Lorem ipsum dolor sit amet consectetur.</p>
+             
+              <ul>
+                <li class="list-group-items text-capitalize text-white">
+                  <i class="fas fa-fw fa-paint-brush" aria-hidden="true"></i>
+                    item discriptaion
+                  </i>
+                </li>
+
+                  <li class="list-group-items text-capitalize text-white">
+                  <i class="fab fa-fw fa-instagram" aria-hidden="true"></i>
+                    item discriptaion
+                  </i>
+                </li>
+              
+                <li class="list-group-items text-capitalize text-white">
+                  <i class="fas fa-fw fa-cogs" aria-hidden="true"></i>
+                    item discriptaion
+                  </i>
+                </li>
+
+                <li class="list-group-items text-capitalize text-white">
+                  <i class="fas fa-fw fa-check" aria-hidden="true"></i>
+                    item discriptaion
+                  </i>
+                </li>
+
+                 <li class="list-group-items text-capitalize text-white">
+                  <i class="fas fa-fw fa-check" aria-hidden="true"></i>
+                    item discriptaion
+                  </i>
+                </li>
+
+              </ul>
+               </div>
+              <div class="card-footer text-center">
+                <a href="#o" class="btn btn-grad">Select plan</a>
+              </div>
+            </div>
+          </div>
+          <!-- end of PRO -->
+
+               <!-- SEMI PRO -->
+          <div class="col-12 col-md-4 mb-4">
+            <div class="card my-card-outline">
+              <div class="card-header my-card-bg text-white text-center">
+                <h2>Semi - pro</h2>
+                <h4>$5.99 / month</h4>
+              </div>
+              <div class="card-body">
+                <p class="card-text">Lorem ipsum dolor sit amet consectetur.</p>
+              
+              <ul>
+                <li class="list-group-items text-capitalize text-white">
+                  <i class="fas fa-fw fa-paint-brush" aria-hidden="true"></i>
+                    item discriptaion
+                  </i>
+                </li>
+
+                  <li class="list-group-items text-capitalize text-white">
+                  <i class="fab fa-fw fa-instagram" aria-hidden="true"></i>
+                    item discriptaion
+                  </i>
+                </li>
+
+                 <li class="list-group-items text-capitalize text-white">
+                  <i class="fas fa-fw fa-cogs" aria-hidden="true"></i>
+                    item discriptaion
+                  </i>
+                </li>
+              
+              </ul>
+              </div>
+              <div class="card-footer text-center">
+                <a href="#o" class="btn btn-grad">Select plan</a>
+              </div>
+            </div>
+          </div>
+          <!-- end of SEMI PRO -->
+        </div>
+      </section>
+
+      <!-- ============reviews section========== -->
+      <section id="section-reviews" class="mt-5">
+      <h2 class="display-4 text-center text-grad">
+        Reviews
+      </h2> 
+      <div class="row mb-3">
+        <!-- single quote -->
+        <div class="col-12 col-md-6 col-xl-3 gx-5 gy-3">
+<figure>
+  <blockquote class="blockquote">
+<p>
+  <i class="fas fa-fw fa-quote-left text-secondary" aria-hidden="true"></i> Lorem ipsum, dolor sit amet consectetur adipisicing elit. Provident, nostrum ea amet quaerat laudantium error.  <i class="fas fa-fw fa-quote-right text-secondary" aria-hidden="true" ></i> 
+</p>
+  </blockquote>
+  <figcaption class="blockquote-footer">Firstname Lastname </figcaption>
+</figure>
+        </div>
+        <!-- end of single quote -->
+
+                <!-- single quote -->
+        <div class="col-12 col-md-6 col-xl-3 gx-5 gy-3">
+<figure>
+  <blockquote class="blockquote">
+<p>
+  <i class="fas fa-fw fa-quote-left text-secondary" aria-hidden="true"></i> Lorem ipsum, dolor sit amet consectetur adipisicing elit. Provident, nostrum ea amet quaerat laudantium error.  <i class="fas fa-fw fa-quote-right text-secondary" aria-hidden="true" ></i> 
+</p>
+  </blockquote>
+  <figcaption class="blockquote-footer">Firstname Lastname </figcaption>
+</figure>
+        </div>
+        <!-- end of single quote -->
+
+                <!-- single quote -->
+        <div class="col-12 col-md-6 col-xl-3 gx-5 gy-3">
+<figure>
+  <blockquote class="blockquote">
+<p>
+  <i class="fas fa-fw fa-quote-left text-secondary" aria-hidden="true"></i> Lorem ipsum, dolor sit amet consectetur adipisicing elit. Provident, nostrum ea amet quaerat laudantium error.  <i class="fas fa-fw fa-quote-right text-secondary" aria-hidden="true" ></i> 
+</p>
+  </blockquote>
+  <figcaption class="blockquote-footer">Firstname Lastname </figcaption>
+</figure>
+        </div>
+        <!-- end of single quote -->
+
+                <!-- single quote -->
+        <div class="col-12 col-md-6 col-xl-3 gx-5 gy-3">
+<figure>
+  <blockquote class="blockquote">
+<p>
+  <i class="fas fa-fw fa-quote-left text-secondary" aria-hidden="true"></i> Lorem ipsum, dolor sit amet consectetur adipisicing elit. Provident, nostrum ea amet quaerat laudantium error.  <i class="fas fa-fw fa-quote-right text-secondary" aria-hidden="true" ></i> 
+</p>
+  </blockquote>
+  <figcaption class="blockquote-footer">Firstname Lastname </figcaption>
+</figure>
+        </div>
+        <!-- end of single quote -->
+      </div>
+      </section>
+
+    </div>
+    <!-- ^ container div -->
+
+
+    <!--============ newsletter================= - *not a part of the container cause have diff background -->
+
+    <section id="section-newsletter" class="py-5 newsletter-bg">
+
+      <div class="container">
+        <form class="text-white">
+          <h2 class="display-4 text-center "> 
+Newsletter
+          </h2>
+          <p class="lead text-center">
+            Lorem ipsum, dolor sit amet consectetur adipisicing.
+          </p>
+<div class="row">
+  <div class="col-12 col-sm-6">
+    <div class="mb-3">
+      <label class="sr-only" for="input-name">Your Name:</label>
+      <input type="text" class="form-control" placeholder="Type your name here" id="input-name">
+    </div>
+  </div>
+
+   <div class="col-12 col-sm-6">
+    <div class="mb-3">
+      <label class="sr-only" for="input-name">Your Email:</label>
+      <input type="email" class="form-control" placeholder="mail@example.com" id="input-email">
+    </div>
+  </div>
+</div>
+<div class="form-check mb-2">
+  <input type="checkbox" class="form-check-input" id="input-terms" value="terms">
+  <label class="form-check-label" for="input-terms">I have read and accept the <a href="#0" data-bs-toggle="modal" data-bs-target="#modal"> terms and conditions</a></label>
+</div>
+<div class="d-flex justify-content-between">
+  <small class="form-text text-white w-75">You can unsubscribe at any time </small>
+  <button type="submit" class="btn btn-hipster">Sign up </button>
+</div>
+        </form>
+
+        <!-- the modal -->
+<div class="modal fade" id="modal" tabindex="-1" aria-labelledby="modalTitle" aria-hidden="true">
+  <div class="modal-dialog model-lg"role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title  text-black-50" id="modalTitle">Terms and conditions</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"> </button>
+      </div>
+      <div class="modal-body text-black-50">
+             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis distinctio fugit quidem repellat temporibus nisi, laudantium ad recusandae accusantium eius nam ea ipsum, necessitatibus similique suscipit magni. Et quaerat, aliquam unde ab saepe ipsum. Non provident eos, saepe eaque qui praesentium quas vel doloribus delectus molestias ipsa ipsum laborum aliquam perferendis dolor, temporibus animi, similique suscipit dolorem fugiat? Aut ut praesentium dolores sapiente omnis mollitia, maxime, ad ab quisquam corrupti totam iure obcaecati maiores nam sint eius! Temporibus deserunt repellat rerum nulla officia ut, quidem iusto maiores quia expedita vero eius mollitia inventore rem, amet ratione! Facilis, aliquam harum provident voluptate explicabo animi illo, quod nam esse suscipit officiis at repudiandae recusandae beatae maxime, nesciunt corporis dicta omnis accusamus. Asperiores?
+              </p>
+                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis distinctio fugit quidem repellat temporibus nisi, laudantium ad recusandae accusantium eius nam ea ipsum, necessitatibus similique suscipit magni. Et quaerat, aliquam unde ab saepe ipsum. Non provident eos, saepe eaque qui praesentium quas vel doloribus delectus molestias ipsa ipsum laborum aliquam perferendis dolor, temporibus animi, similique suscipit dolorem fugiat? Aut ut praesentium dolores sapiente omnis mollitia, maxime, ad ab quisquam corrupti totam iure obcaecati maiores nam sint eius! Temporibus deserunt repellat rerum nulla officia ut, quidem iusto maiores quia expedita vero eius mollitia inventore rem, amet ratione! Facilis, aliquam harum provident voluptate explicabo animi illo, quod nam esse suscipit officiis at repudiandae recusandae beatae maxime, nesciunt corporis dicta omnis accusamus. Asperiores?
+              </p>
+
+                     <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Magnam, error quibusdam! Eveniet ullam facere consequatur aperiam sed et, numquam necessitatibus. Nobis, exercitationem! Sed vel odit iure nemo ullam praesentium, ipsa, error non aliquam sit dicta dignissimos, blanditiis eaque tenetur. Quo cum sint perspiciatis vero, cupiditate esse alias, enim sunt temporibus minus veritatis autem magnam harum?
+              </p>
+      </div>
+      <div class="modal-footer">
+      
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- end model -->
+          
+        </div>
+      </div>
+    </section>
+
+    <!-- ============section-footer============ -->
+
+<footer>
+<div class="container py-3 py-sm-5">
+  <div class="row">
+    <!-- single col -->
+    <div class="col-12 col-sm-6 col-lg-3">
+      <h6> Quick links</h6>
+      <ul>
+        <li>
+          <a href="#0">Home</a>
+        </li>
+
+         <li>
+          <a href="#0">What's new</a>
+        </li>
+
+         <li>
+          <a href="#0">Support</a>
+        </li>
+
+         <li>
+          <a href="#0">My account</a>
+        </li>
+
+         <li>
+          <a href="#0">Cancel subscription</a>
+        </li>
+      </ul>
+    </div>
+<!-- end of single col -->
+
+   <!-- single col -->
+    <div class="col-12 col-sm-6 col-lg-3">
+      <h6> Information</h6>
+      <ul>
+        <li>
+          <a href="#0">About us</a>
+        </li>
+
+         <li>
+          <a href="#0">Jobs</a>
+        </li>
+
+         <li>
+          <a href="#0">Info</a>
+        </li>
+
+         <li>
+          <a href="#0">Contact</a>
+        </li>
+
+         <li>
+          <a href="#0">Partnership</a>
+        </li>
+      </ul>
+    </div>
+<!-- end of single col -->
+
+   <!-- single col -->
+    <div class="col-12 col-sm-6 col-lg-3 ">
+      <h6> Follow us</h6>
+      <ul>
+        <li>
+          <a href="#0"> <i class="fab fa-fw fa-facebook " aria-hidden="true"></i></a>
+        </li>
+
+         <li>
+           <a href="#0"> <i class="fab fa-fw fa-instagram " aria-hidden="true"></i></a>
+        </li>
+
+         <li>
+          <a href="#0"> <i class="fab fa-fw fa-twitter " aria-hidden="true"></i></a>
+        </li>
+
+         <li>
+           <a href="#0"> <i class="fab fa-fw fa-linkedin " aria-hidden="true"></i></a>
+        </li>
+
+         <li>
+           <a href="#0"> <i class="fab fa-fw fa-google " aria-hidden="true"></i></a>
+        </li>
+      </ul>
+    </div>
+<!-- end of single col -->
+<div class="col-12 col-sm-6 col-lg-3">
+  <h6>
+    Our location
+  </h6>
+  <address> <strong>VR App</strong><br>
+    Adress, Country<br>
+    <i class="fas fa-w fa-phone" aria-hidden="true">
+    </i><span class="sr-only"> Telephone:</span> <a href="tel:+12345678">(123) 456-789</a><br>
+
+        <i class="fas fa-w fa-envelope" aria-hidden="true">
+    </i><span class="sr-only"> Mail:</span> <a href="mailto:info@VRapp.com">info@VRapp.com</a><br>
+  </address>
+</div>
+ 
+  </div>
+<div class="row">
+    <div class="col-12 col-sm-6 col-lg-9">
+<ul class="list-inline">
+  <li class="list-inline-item"> &copy; 2022 VR App</li>
+<li class="list-inline-item">All rights reserved.</li>
+<li class="list-inline-item"><a href="#0" data-bs-toggle="modal" data-bs-target="#modal">Terms of use and privecy policy</a>.</li>
+</ul>
+    </div>
+ 
+  <div class="col-12 col-sm-6 col-lg-3">
+<!-- dropdown -->
+<div class="dropdown dropup">
+  <button type="button" class="btn btn-secondary btn-sm dropdown-toggle" id="LanguageMenueButton" data-bs-toggle="dropdown" aria-expanded="false"><i class="fas fa-w fa-language" aria-hidden="true">
+    </i> Change language</button>
+  <div class="dropdown-menu p-0 dropdown-menu-dark" aria-labelledby="LanguageMenueButton">
+    <a href="#" class="dropdown-item small px-1">language</a>
+    <a href="#" class="dropdown-item small px-1">language</a>
+    <a href="#" class="dropdown-item small px-1">language</a>
+    <a href="#" class="dropdown-item small px-1">language</a>
+  </div>
+</div>
+<!-- end of dropdoen -->
+  </div>
+   </div>
+</div>
+
+</footer>
+    <script src="./js/bootstrap.bundle.min.js"></script>
+    <script src="./js/smooth-scroll.min.js"> </script>
+    <script>
+      var scroll = new SmoothScroll('a[href*="#section"-]' ,{ offset:56})
+    </script>
+  </body>
+</html>
