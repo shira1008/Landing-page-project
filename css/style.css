@@ -34,9 +34,9 @@ html {
   --grey-400: #94a3b8;
   --grey-500: #91908d;
   --grey-600: #475569;
-  --grey-700: #334155;
-  --grey-800: #2c3441;
-  --grey-900: #22272c;
+  --grey-700: #444343;
+  --grey-800: #313131;
+  --grey-900: #2b2a2a;
   /* rest of the colors */
   --black: #1d1d1d;
   --white: #fff;
@@ -220,10 +220,15 @@ ul {
   transition: var(--transition);
 }
 
+/* hte top of the card color */
 .my-card-bg {
   background: var(--grey-800);
 }
+.my-card-outline-pro .my-card-bg {
+  background: var(--grey-700);
+}
 
+/* the card body color */
 .my-card-outline-pro {
   background: var(--grey-900);
   border: 1px solid;
